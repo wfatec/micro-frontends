@@ -1,0 +1,56 @@
+Arguments: 
+  /usr/local/Cellar/node/10.8.0/bin/node /usr/local/bin/yarn install
+
+PATH: 
+  /Users/wfatec/anaconda3/bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Users/wfatec/anaconda3/bin:/Users/wfatec/maven/bin:/Users/wfatec/maven/bin
+
+Yarn version: 
+  1.16.0
+
+Node version: 
+  10.8.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: https://registry.npmjs.org/express: ETIMEDOUT
+      at Timeout._onTimeout (/usr/local/lib/node_modules/yarn/lib/cli.js:130250:19)
+      at ontimeout (timers.js:424:11)
+      at tryOnTimeout (timers.js:288:5)
+      at listOnTimeout (timers.js:251:5)
+      at Timer.processTimers (timers.js:211:10)
+
+npm manifest: 
+  {
+    "name": "team-blue",
+    "version": "1.0.0",
+    "description": "",
+    "main": "src/server.js",
+    "scripts": {
+      "build": "webpack -p",
+      "server": "babel-node --presets env ./src/server.js",
+      "start": "npm run build; npm run server",
+      "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "author": "",
+    "license": "ISC",
+    "dependencies": {
+      "express": "^4.16.4",
+      "morgan": "^1.9.1"
+    },
+    "devDependencies": {
+      "babel-cli": "^6.26.0",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.5",
+      "babel-preset-env": "^1.7.0",
+      "nodemon": "^1.18.9",
+      "webpack": "^3.12.0"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
